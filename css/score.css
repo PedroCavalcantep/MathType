@@ -1,0 +1,44 @@
+body {
+    background-color: #101010;
+    display: flex;
+}
+
+
+.col-custom1 {
+  background-color:#101010;
+  height: 86vh;
+  display: flex;
+}
+
+.selec-info {
+  width: 60%;
+  height: 95%;
+  background-color: #1E1E1E;
+  margin-left: 43%;
+}
+
+.col-custom2 {
+  background-color: #101010;
+  height: 86vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
+}
+
+.info-user {
+  width: 85%;
+  height: 18%;
+  background-color: #1E1E1E;
+}
+
+.info-best-score {
+  width: 85%;
+  height: 18%;
+  background-color: #1E1E1E;
+}
+
+.info-ranking {
+  width: 85%;
+  height: 55%;
+  background-color: #1E1E1E;
+}
