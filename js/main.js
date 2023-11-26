@@ -77,12 +77,12 @@ function getHTML() {
       <ul class="list-group check">
         <li id="acertosfinal" class="list-group-item lista" style="width: 300px">
           <label class="form-check-label txt" for="firstCheckbox">Acertos</label>
-          <span id="acertos" class="badge bg-primary rounded-pill">6</span>
+          <span id="acertos" class="badge bg-primary rounded-pill">${acertos}</span>
         </li>
         <br />
         <li id="errosfinal" class="list-group-item lista" style="width: 200px">
           <label class="form-check-label txt" for="secondCheckbox">Erros</label>
-          <span id="erros" class="badge bg-primary rounded-pill">2</span>
+          <span id="erros" class="badge bg-primary rounded-pill">${erros}</span>
         </li>
       </ul>
       <div class="btns">
