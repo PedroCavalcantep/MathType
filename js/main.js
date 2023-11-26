@@ -11,7 +11,7 @@ function timerInicial(segundos) {
     if (segundos <= 0) {
       clearInterval(contador);
       gerarPergunta();
-      iniciarTimer(29);
+      iniciarTimer(10);
     } else {
       segundos--;
     }
@@ -47,7 +47,7 @@ function gerarPergunta() {
 
 function checarResposta() {
   let resposta = document.querySelector("#resposta").value;
-  if (resultado == resposta) {
+  if (resultado === resposta) {
     console.log("acertou");
     document.querySelector("#resposta").value = "";
     acertos++;
@@ -80,14 +80,14 @@ function getHTML() {
           <span id="acertos" class="badge bg-primary rounded-pill">${acertos}</span>
         </li>
         <br />
-        <li id="errosfinal" class="list-group-item lista" style="width: 200px">
+        <li id="errosfinal" class="list-group-item lista" style="width: 300px">
           <label class="form-check-label txt" for="secondCheckbox">Erros</label>
           <span id="erros" class="badge bg-primary rounded-pill">${erros}</span>
         </li>
       </ul>
       <div class="btns">
-        <button id="btnhome" class="btn btn-secondary">teste</button>
-        <button id="btnreset" class="btn btn-secondary">teste</button>
+        <button id="btnhome" class="btn btn-secondary">Ir para tela inicial</button>
+        <button id="btnreset" class="btn btn-secondary">Tentar de novo</button>
       </div>
     </div>`;
 }

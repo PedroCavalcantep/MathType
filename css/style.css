@@ -23,7 +23,7 @@ body {
   background: #1e1e1e;
   color: white;
   text-align: center;
-  font-size: 30px;
+  font-size: 40px;
 
   width: 259px;
   height: 95px;
@@ -45,7 +45,7 @@ body {
   align-items: center;
   border-radius: 10px;
   background: #1e1e1e;
-  font-size: 50px;
+  font-size: 60px;
 
   color: #fff;
 
@@ -86,6 +86,7 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 #acertosfinal {
+  margin-left: 100px;
   font-size: 30px;
 
   margin-top: 100px;
