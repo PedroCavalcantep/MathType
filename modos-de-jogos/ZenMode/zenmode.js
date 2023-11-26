@@ -10,12 +10,13 @@ function teste() {
 }
 
 function timerInicial(segundos) {
+  checarPlacar();
   let contador = setInterval(function () {
     display.textContent = segundos;
     if (segundos <= 0) {
       clearInterval(contador);
       gerarPergunta();
-      iniciarTimer(30);
+      iniciarTimer(1);
     } else {
       segundos--;
     }
@@ -23,14 +24,13 @@ function timerInicial(segundos) {
 }
 
 function iniciarTimer(segundos) {
-  checarPlacar()
   let contador = setInterval(function () {
     display.textContent = segundos;
-    if (segundos <= 0) {
+    if (segundos <= "nope") {
       clearInterval(contador);
       document.getElementsByTagName("body")[0].innerHTML = getHTML();
     } else {
-      segundos--;
+      segundos++;
     }
   }, 1000);
   checarPlacar();
