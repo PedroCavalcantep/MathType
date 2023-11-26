@@ -10,13 +10,13 @@ function teste() {
 }
 
 function timerInicial(segundos) {
-  checarPlacar()
+  checarPlacar();
   let contador = setInterval(function () {
     display.textContent = segundos;
     if (segundos <= 0) {
       clearInterval(contador);
       gerarPergunta();
-      iniciarTimer(30);
+      iniciarTimer(60);
     } else {
       segundos--;
     }
@@ -24,7 +24,7 @@ function timerInicial(segundos) {
 }
 
 function iniciarTimer(segundos) {
-  checarPlacar()
+  checarPlacar();
   let contador = setInterval(function () {
     display.textContent = segundos;
     if (segundos <= 0) {
@@ -40,14 +40,16 @@ function iniciarTimer(segundos) {
 function gerarPergunta() {
   let num1 = Math.floor(Math.random() * 10);
   let num2 = Math.floor(Math.random() * 10);
+  let num3 = Math.floor(Math.random() * 10);
+  let num4 = Math.floor(Math.random() * 10);
   if (num1 == 0 || num1 == 1) {
     num1 += 3;
   } else if (num2 == 0 || num2 == 1) {
     num2 += 3;
   }
-  let Pergunta = num1 + " X " + num2;
+  let Pergunta = `${num1} X ${num2} + ${num3} X ${num4}`;
   conta.textContent = Pergunta;
-  resultado = num1 * num2;
+  resultado = num1 * num2 + num3 * num4;
   console.log(resultado);
 }
 
