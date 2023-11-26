@@ -1,18 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Laila&display=swap');
+
 * {
-    background-color: black;
-} 
-body{
-    background-color: black;
+  font-family: 'Inter', sans-serif;
 }
-::placeholder{
-    color:white;
-    opacity: 1;   
+body {
+  background-color: #101010;
 }
-.button{
-margin-top: 20px;
- display: flex;
-justify-content: center;
+
+.cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
 }
-#Bt {
-margin-right: 10px;
+
+.timer {
+    display: flex;
+    flex-direction: column;
+  border-radius: 10px;
+  background: #1e1e1e;
+
+  width: 259px;
+  height: 95px;
+  margin: 10px;
+  margin-top: 80px;
+
 }
+
+.text {
+    color: #fff;
+    font-size: 70px;
+    font-family: 'Inter', sans-serif;
+}
+
+.pergunta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: #1e1e1e;
+
+    color: #fff;
+
+    width: 730px;
+    height: 200px;
+    font-family: 'Inter', sans-serif;
+}
+
+.pedroxd {
+    
+    border: none;
+    outline: none;
+    border-radius: 30px;
+}
+
+.check {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 30px;
+    gap: 20px;
+}
+
+.txt {
+    margin-right: 10px;
+}
+
+.lista {
+    border: none;
+
+    color: #fff;
+    background: none;
+}
+
