@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;800&display=swap');
+
+#img {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    gap: 20px;
+}
+
+
+html, body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #1E1E1E;
+    width: 900px;
+    height: 560px;
+
+    gap: 80px;
+    margin-top: 60px;
+    border-radius: 20px;
+}
+
+.text {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Inter', sans-serif;
+}
+
+.text1 {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.text2 {
+    font-size: 20px;
+    font-weight: 500;
+}
