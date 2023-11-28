@@ -5,12 +5,8 @@ let resultado;
 let acertos = 0;
 let erros = 0;
 
-function teste() {
-  display.textContent = "aaaaa";
-}
-
 function timerInicial(segundos) {
-  checarPlacar()
+  checarPlacar();
   let contador = setInterval(function () {
     display.textContent = segundos;
     if (segundos <= 0) {
@@ -24,7 +20,8 @@ function timerInicial(segundos) {
 }
 
 function iniciarTimer(segundos) {
-  checarPlacar()
+  document.getElementById("input-js").innerHTML = mostrarInput();
+  checarPlacar();
   let contador = setInterval(function () {
     display.textContent = segundos;
     if (segundos <= 0) {
@@ -48,20 +45,17 @@ function gerarPergunta() {
   let Pergunta = num1 + " X " + num2;
   conta.textContent = Pergunta;
   resultado = num1 * num2;
-  console.log(resultado);
 }
 
 function checarResposta() {
   let resposta = document.querySelector("#resposta").value;
   if (resultado == resposta) {
-    console.log("acertou");
     document.querySelector("#resposta").value = "";
     acertos++;
     checarPlacar();
 
     gerarPergunta();
   } else {
-    console.log("errou");
     document.querySelector("#resposta").value = "";
     erros++;
     checarPlacar();
@@ -79,6 +73,41 @@ function checarPlacar() {
 }
 function getHTML() {
   return `
-  <h1>cabo</h1>
+  <div class="container1">
+
+    <div class="box">
+
+      <div class="text-content">
+        <p class="text">Resultado</p>
+      </div>
+
+        <div class="txt-content">
+          <p id="acertos" class="txt1">acertos  <span class="badge bg-primary rounded-pill">${acertos}</span></p>
+          <p id="erros" class="txt1">Erros  <span class="badge bg-primary rounded-pill">${erros}</span></p>
+        </div>
+
+
+        <div class="btn-content">
+          <a href="/modos-de-jogos/TimerAttack/timerattack.html" class="btn btn-outline-primary" id="btn2" style="width: 200px;">Reiniciar<a>
+          <a href="/views/home.html" class="btn btn-outline-primary" id="btn3" style="width: 200px;">Sair</a>
+    
+    </div>
+
+
+  </div>
   `;
+}
+function mostrarInput() {
+  return `
+  <input
+          type="number"
+          id="resposta"
+          autofocus
+          autocomplete="off"
+          suggestions="off"
+          onkeydown="keyPressCheck()"
+          class="text-center fw-bold pedroxd"
+          placeholder="Digite o resultado..."
+          style="background-color: #1e1e1e; height: 60px; width: 300px" />
+          `;
 }
